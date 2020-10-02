@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.calculator-container {
+    width: 400px;
+    background-color: black;
+    color: white;
+    margin: auto;
+}
+
+.result-cell {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    text-align: right;
+    padding: 20px 10px;     /* this property sets paddings for the result-cell element (top-right-bottom-left), 
+                               it also sets HEIGHT for this element */
+}
+
+.calculator-row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: stretch;             /* This does nothing because we set height for the buttons (.btn) bellow */
+    justify-content: space-between;     /* This makes even spaces between buttons horizontally */
+    margin-bottom: 0.5%;                  /* This creates gutters between buttons vertically */
+}
+
+.btn {
+    width: 24.5%;
+    height: 100px;      
+    font-size: 35px;
+    background-color: #d8d9da;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ebebeb;  /* the button gets lighter when it's hovered on */
+}
+
+.btn:active {
+    background-color: #bbbcbe;  /* the button gets darker when it's pushed down */
+}
+
+.half {
+    width: 49.7%;
+}
+
+.thirdquart {
+    width: 74.8%;
+}
+
+.btn:last-child {
+    background-color: #df974c;
+    color: white;
+}
+
+.btn:last-child:hover {
+    background-color: #dfb07e;
+}
+
+.btn:last-child:active {
+    background-color: #dd8d37;
+}
